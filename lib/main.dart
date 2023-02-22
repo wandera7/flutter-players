@@ -13,6 +13,12 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
+  final List<Player> players=[
+    Player(name: 'Joe', age: 24, price: 50000, location: 'Kenya'),
+    Player(name: 'Fidel', age: 21, price: 90000, location: 'Ghana'),
+    Player(name: 'Emmanuel', age: 27, price: 30000, location: 'Uganda'),
+    Player(name: 'Rick', age: 34, price: 45000, location: 'South Africa')
+  ];
 
   @override
   Widget build(BuildContext context) {

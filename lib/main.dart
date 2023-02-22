@@ -43,7 +43,13 @@ class MyHomePage extends StatelessWidget {
                       Text(player.name,style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),
                       Text(player.age.toString(),style: TextStyle(fontSize: 13),),
                       Text(player.location,style: TextStyle(fontSize: 10),)
-                    ],)
+                    ],),
+                    Container(
+                      padding: EdgeInsets.all(8),
+                      decoration: BoxDecoration(border: Border.all(color: Colors.black,width: 1.5)),
+                      child: Text(player.price.toString()),
+                    )
+
                   ],
                 ),
               );

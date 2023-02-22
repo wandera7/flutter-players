@@ -38,7 +38,13 @@ class MyHomePage extends StatelessWidget {
             Column(children:players.map((player) {
               return Card(
                 child: Row(
-
+                  children: [
+                    Column(children: [
+                      Text(player.name,style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),
+                      Text(player.age.toString(),style: TextStyle(fontSize: 13),),
+                      Text(player.location,style: TextStyle(fontSize: 10),)
+                    ],)
+                  ],
                 ),
               );
             }).toList())

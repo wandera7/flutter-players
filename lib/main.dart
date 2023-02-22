@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,8 +21,12 @@ class MyHomePage extends StatelessWidget {
           title: Text('My players'),
         ),
         body: Column(
-          children: [Container(
-
+          children: [
+            Container(
+              padding:EdgeInsets.all(5),
+              margin: EdgeInsets.symmetric(vertical: 15,horizontal: 20),
+              color:Colors.blue
+              child: Text('Chelsea players'),
           )],
         ));
   }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './players.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
-  final List<Player> players=[
+  final List<Player> players = [
     Player(name: 'Joe', age: 24, price: 50000, location: 'Kenya'),
     Player(name: 'Fidel', age: 21, price: 90000, location: 'Ghana'),
     Player(name: 'Emmanuel', age: 27, price: 30000, location: 'Uganda'),
@@ -29,11 +30,19 @@ class MyHomePage extends StatelessWidget {
         body: Column(
           children: [
             Container(
-              padding:EdgeInsets.all(5),
-              margin: EdgeInsets.symmetric(vertical: 15,horizontal: 20),
-              color:Colors.blue,
+              padding: EdgeInsets.all(5),
+              margin: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+              color: Colors.blue,
               child: Text('Chelsea players'),
-          )],
+            ),
+            Column(children:players.map((player) {
+              return Card(
+                child: Row(
+
+                ),
+              );
+            }).toList())
+          ],
         ));
   }
 }
